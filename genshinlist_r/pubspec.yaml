@@ -1,0 +1,363 @@
+name: genshinlist_r
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.5 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/image/logo.jpg
+    - assets/char/albedo.jpeg
+    - assets/char/alhaitham.jpeg
+    - assets/char/aloy.jpeg
+    - assets/char/amber.jpeg
+    - assets/char/arataki-itto.jpeg
+    - assets/char/arlecchino.jpeg
+    - assets/char/ayaka.jpeg
+    - assets/char/ayato.jpeg
+    - assets/char/baizhu.jpeg
+    - assets/char/barbara.jpeg
+    - assets/char/beidou.jpeg
+    - assets/char/bennett.jpeg
+    - assets/char/candace.jpeg
+    - assets/char/charlotte.jpeg
+    - assets/char/chevreuse.jpeg
+    - assets/char/chiori.jpeg
+    - assets/char/chongyun.jpeg
+    - assets/char/clorinde.jpeg
+    - assets/char/collei.jpeg
+    - assets/char/cyno.jpeg
+    - assets/char/dehya.jpeg
+    - assets/char/diluc.jpeg
+    - assets/char/diona.jpeg
+    - assets/char/dori.jpeg
+    - assets/char/emilie.jpeg
+    - assets/char/eula.jpeg
+    - assets/char/faruzan.jpeg
+    - assets/char/fischl.jpeg
+    - assets/char/freminet.jpeg
+    - assets/char/furina.jpeg
+    - assets/char/gaming.jpeg
+    - assets/char/ganyu.jpeg
+    - assets/char/gorou.jpeg
+    - assets/char/hu-tao.jpeg
+    - assets/char/jean.jpeg
+    - assets/char/kaeya.jpeg
+    - assets/char/kaveh.jpeg
+    - assets/char/kazuha.jpeg
+    - assets/char/keqing.jpeg
+    - assets/char/kirara.jpeg
+    - assets/char/klee.jpeg
+    - assets/char/kokomi.jpeg
+    - assets/char/kuki-shinobu.jpeg
+    - assets/char/layla.jpeg
+    - assets/char/lisa.jpeg
+    - assets/char/lynette.jpeg
+    - assets/char/lyney.jpeg
+    - assets/char/mika.jpeg
+    - assets/char/mona.jpeg
+    - assets/char/nahida.jpeg
+    - assets/char/navia.jpeg
+    - assets/char/neuvillette.jpeg
+    - assets/char/nilou.jpeg
+    - assets/char/ningguang.jpeg
+    - assets/char/noelle.jpeg
+    - assets/char/qiqi.jpeg
+    - assets/char/raiden.jpeg
+    - assets/char/razor.jpeg
+    - assets/char/rosaria.jpeg
+    - assets/char/sara.jpeg
+    - assets/char/sayu.jpeg
+    - assets/char/sethos.jpeg
+    - assets/char/shenhe.jpeg
+    - assets/char/shikanoin-heizou.jpeg
+    - assets/char/sigewinne.jpeg
+    - assets/char/sucrose.jpeg
+    - assets/char/tartaglia.jpeg
+    - assets/char/thoma.jpeg
+    - assets/char/tighnari.jpeg
+    - assets/char/venti.jpeg
+    - assets/char/wanderer.jpeg
+    - assets/char/wriothesley.jpeg
+    - assets/char/xiangling.jpeg
+    - assets/char/xianyun.jpeg
+    - assets/char/xiao.jpeg
+    - assets/char/xingqiu.jpeg
+    - assets/char/xinyan.jpeg
+    - assets/char/yae-miko.jpeg
+    - assets/char/yanfei.jpeg
+    - assets/char/yaoyao.jpeg
+    - assets/char/yelan.jpeg
+    - assets/char/yoimiya.jpeg
+    - assets/char/yun-jin.jpeg
+    - assets/char/zhongli.jpeg
+    # weapon
+    - assets/weapon/a-thousand-floating-dreams.png
+    - assets/weapon/akuoumaru.png
+    - assets/weapon/alley-hunter.png
+    - assets/weapon/amber-catalyst.png
+    - assets/weapon/amenoma-kageuchi.png
+    - assets/weapon/amos-bow.png
+    - assets/weapon/apprentice-s-notes.png
+    - assets/weapon/aqua-simulacra.png
+    - assets/weapon/aquila-favonia.png
+    - assets/weapon/ballad-of-the-boundless-blue.png
+    - assets/weapon/ballad-of-the-fjords.png
+    - assets/weapon/beacon-of-the-reed-sea.png
+    - assets/weapon/beginner-s-protector.png
+    - assets/weapon/black-tassel.png
+    - assets/weapon/blackcliff-agate.png
+    - assets/weapon/blackcliff-amulet.png
+    - assets/weapon/blackcliff-longsword.png
+    - assets/weapon/blackcliff-pole.png
+    - assets/weapon/blackcliff-slasher.png
+    - assets/weapon/blackcliff-warbow.png
+    - assets/weapon/bloodtainted-greatsword.png
+    - assets/weapon/calamity-queller.png
+    - assets/weapon/cashflow-supervision.png
+    - assets/weapon/cinnabar-spindle.png
+    # - assets/weapon/compound-bow.png
+    - assets/weapon/cool-steel.png
+    # - assets/weapon/crane-s-echoing-call.png
+    - assets/weapon/crescent-pike.png
+    # - assets/weapon/crimson-moon-s-semblance.png
+    - assets/weapon/dark-iron-sword.png
+    - assets/weapon/deathmatch.png
+    - assets/weapon/debate-club.png
+    # - assets/weapon/dialogues-of-the-desert-sages.png
+    - assets/weapon/dodoco-tales.png
+    # - assets/weapon/dragon-s-bane.png
+    - assets/weapon/dragonspine-spear.png
+    - assets/weapon/dull-blade.png
+    # - assets/weapon/ebony-bow.png
+    - assets/weapon/elegy-for-the-end.png
+    - assets/weapon/emerald-orb.png
+    - assets/weapon/end-of-the-line.png
+    - assets/weapon/engulfing-lightning.png
+    - assets/weapon/everlasting-moonglow.png
+    - assets/weapon/eye-of-perception.png
+    - assets/weapon/fading-twilight.png
+    - assets/weapon/favonius-codex.png
+    - assets/weapon/favonius-greatsword.png
+    - assets/weapon/favonius-lance.png
+    - assets/weapon/favonius-sword.png
+    - assets/weapon/favonius-warbow.png
+    - assets/weapon/ferrous-shadow.png
+    - assets/weapon/festering-desire.png
+    - assets/weapon/fillet-blade.png
+    - assets/weapon/finale-of-the-deep.png
+    - assets/weapon/fleuve-cendre-ferryman.png
+    - assets/weapon/flowing-purity.png
+    - assets/weapon/forest-regalia.png
+    - assets/weapon/freedom-sworn.png
+    - assets/weapon/frostbearer.png
+    - assets/weapon/fruit-of-fulfillment.png
+    - assets/weapon/hakushin-ring.png
+    - assets/weapon/halberd.png
+    - assets/weapon/hamayumi.png
+    - assets/weapon/haran-geppaku-futsu.png
+    - assets/weapon/harbinger-of-dawn.png
+    # - assets/weapon/hunter-s-bow.png
+    # - assets/weapon/hunter-s-path.png
+    - assets/weapon/ibis-piercer.png
+    - assets/weapon/iron-point.png
+    - assets/weapon/iron-sting.png
+    # - assets/weapon/jadefall-s-splendor.png
+    - assets/weapon/kagotsurube-isshin.png
+    # - assets/weapon/kagura-s-verity.png
+    - assets/weapon/katsuragikiri-nagamasa.png
+    - assets/weapon/key-of-khaj-nisut.png
+    # - assets/weapon/king-s-squire.png
+    - assets/weapon/kitain-cross-spear.png
+    - assets/weapon/light-of-foliar-incision.png
+    # - assets/weapon/lion-s-roar.png
+    - assets/weapon/lithic-blade.png
+    - assets/weapon/lithic-spear.png
+    - assets/weapon/lost-prayer-to-the-sacred-winds.png
+    # - assets/weapon/lumidouce-elegy.png
+    - assets/weapon/luxurious-sea-lord.png
+    - assets/weapon/magic-guide.png
+    - assets/weapon/mailed-flower.png
+    - assets/weapon/makhaira-aquamarine.png
+    - assets/weapon/mappa-mare.png
+    - assets/weapon/memory-of-dust.png
+    - assets/weapon/messenger.png
+    - assets/weapon/missive-windspear.png
+    - assets/weapon/mistsplitter-reforged.png
+    - assets/weapon/mitternachts-waltz.png
+    - assets/weapon/moonpiercer.png
+    # - assets/weapon/mouun-s-moon.png
+    - assets/weapon/oathsworn-eye.png
+    # - assets/weapon/old-merc-s-pal.png
+    - assets/weapon/otherworldly-story.png
+    - assets/weapon/pocket-grimoire.png
+    - assets/weapon/polar-star.png
+    - assets/weapon/portable-power-saw.png
+    - assets/weapon/predator.png
+    - assets/weapon/primordial-jade-cutter.png
+    - assets/weapon/primordial-jade-winged-spear.png
+    - assets/weapon/prospectors-drill.png
+    # - assets/weapon/prototype-amber.png
+    - assets/weapon/prototype-archaic.png
+    - assets/weapon/prototype-crescent.png
+    # - assets/weapon/prototype-grudge.png
+    # - assets/weapon/prototype-malice.png
+    - assets/weapon/prototype-rancour.png
+    - assets/weapon/prototype-starglitter.png
+    # - assets/weapon/quartz.png
+    - assets/weapon/rainslasher.png
+    - assets/weapon/range-gauge.png
+    - assets/weapon/raven-bow.png
+    - assets/weapon/recurve-bow.png
+    - assets/weapon/redhorn-stonethresher.png
+    - assets/weapon/rightful-reward.png
+    - assets/weapon/royal-bow.png
+    - assets/weapon/royal-greatsword.png
+    - assets/weapon/royal-grimoire.png
+    - assets/weapon/royal-longsword.png
+    - assets/weapon/royal-spear.png
+    - assets/weapon/rust.png
+    - assets/weapon/sacrificial-bow.png
+    - assets/weapon/sacrificial-fragments.png
+    - assets/weapon/sacrificial-greatsword.png
+    - assets/weapon/sacrificial-jade.png
+    - assets/weapon/sacrificial-sword.png
+    - assets/weapon/sapwood-blade.png
+    - assets/weapon/scion-of-the-blazing-sun.png
+    - assets/weapon/seasoned-hunter-s-bow.png
+    - assets/weapon/serpent-spine.png
+    # - assets/weapon/sharpshooter-s-oath.png
+    - assets/weapon/silver-sword.png
+    - assets/weapon/skyrider-greatsword.png
+    - assets/weapon/skyrider-sword.png
+    - assets/weapon/skyward-atlas.png
+    - assets/weapon/skyward-blade.png
+    - assets/weapon/skyward-harp.png
+    - assets/weapon/skyward-pride.png
+    - assets/weapon/skyward-spine.png
+    - assets/weapon/slingshot.png
+    - assets/weapon/snow-tombed-starsilver.png
+    - assets/weapon/solar-pearl.png
+    - assets/weapon/song-of-broken-pines.png
+    - assets/weapon/song-of-stillness.png
+    - assets/weapon/splendor-of-tranquil-waters.png
+    - assets/weapon/staff-of-homa.png
+    - assets/weapon/staff-of-the-scarlet-sands.png
+    - assets/weapon/summit-shaper.png
+    - assets/weapon/sword-of-descension.png
+    - assets/weapon/sword-of-narzissenkreuz.png
+    - assets/weapon/talking-stick.png
+    - assets/weapon/the-alley-flash.png
+    - assets/weapon/the-bell.png
+    - assets/weapon/the-black-sword.png
+    - assets/weapon/the-catch.png
+    - assets/weapon/the-dockhands-assistant.png
+    - assets/weapon/the-first-great-magic.png
+    - assets/weapon/the-flute.png
+    - assets/weapon/the-stringless.png
+    - assets/weapon/the-unforged.png
+    - assets/weapon/the-viridescent-hunt.png
+    - assets/weapon/the-widsith.png
+    - assets/weapon/thrilling-tales-of-dragon-slayers.png
+    - assets/weapon/thundering-pulse.png
+    - assets/weapon/tidal-shadow.png
+    # - assets/weapon/tome-of-the-eternal.png
+    - assets/weapon/toukabou-shigure.png
+    # - assets/weapon/traveler-s-handy-sword.png
+    # - assets/weapon/tulaytullah-s-remembrance.png
+    - assets/weapon/twin-nephrite.png
+    # - assets/weapon/ultimate-overlord-s-mega-magic-sword.png
+    # - assets/weapon/uraku-misugiri.png
+    - assets/weapon/verdict.png
+    - assets/weapon/vortex-vanquisher.png
+    - assets/weapon/wandering-evenstar.png
+    - assets/weapon/waster-greatsword.png
+    - assets/weapon/wavebreaker-s-fin.png
+    - assets/weapon/white-iron-greatsword.png
+    - assets/weapon/white-tassel.png
+    - assets/weapon/whiteblind.png
+    - assets/weapon/windblume-ode.png
+    - assets/weapon/wine-and-song.png
+    - assets/weapon/wolf-fang.png
+    - assets/weapon/wolf-s-gravestone.png
+    - assets/weapon/xiphos-moonlight.png
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-char/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-char/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/raleway.ttf
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
